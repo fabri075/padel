@@ -188,6 +188,19 @@ main{
 .contact_form{
     grid-area: form;
     margin: 20px;
+    align-items: center;
+}
+
+.contact_form input{
+    width: 40%;
+    margin: 10px;
+    height: 10%;
+}
+
+.contact_form textarea{
+    width: 80%;
+    margin: 10px;
+    height: 50%;
 }
 
 .social_network{
