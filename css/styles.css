@@ -106,6 +106,7 @@ footer {
   position: absolute;
   bottom: 0;
   text-align: center;
+  height: 3em;
 }
 
 /* Pantalla equipo  */
@@ -149,6 +150,8 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: calc(100vh - 3em);
+  margin-bottom: 3em;
 }
 
 /* main section{
@@ -183,6 +186,7 @@ main {
     "social form form form"
     "map map map info";
   grid-template-rows: auto 40vh 30vh;
+  grid-row-gap: 30px;
   width: 80%;
   border: 2px solid;
   margin: 0 auto;
@@ -303,6 +307,7 @@ main {
   display: flex;
   margin-top: 10px;
   justify-content: center;
+  margin-bottom: -50px;
 }
 
 /* Pantalla FAQ */
@@ -369,7 +374,7 @@ main {
       "inputs"
       "ubication";
     grid-template-rows: auto 40vh 30vh;
-    width: 90%;
+    width: 98%;
     border: 2px solid;
     margin: 0 auto;
     margin-top: 10px;
