@@ -219,6 +219,7 @@ main{
 }
 
 .inputs_contact input{
+    width: 100%;
     text-align: justify;
     font-size: 100%;
 }
@@ -327,5 +328,19 @@ main{
 .text_info{
     padding: 5%;
     text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+    .contact_grid{
+        display: grid;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-template-areas: 'social form form '
+                                'map map info';
+        grid-template-rows: 40vh 30vh;
+        width: 80%;
+        border: 2px solid;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
 }
 
