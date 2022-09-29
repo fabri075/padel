@@ -124,7 +124,7 @@ footer {
 }
 .equipobox {
   margin-bottom: 3em;
-  padding: 2em;
+  padding-top: 2em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -133,6 +133,8 @@ footer {
 
 .teamline {
   background-color: #3c3c3ced;
+  padding-top: 2em;
+  padding-bottom: 2em;
   display: flex;
   max-width: 80vw;
   flex-direction: row;
@@ -406,6 +408,9 @@ main {
     margin-top: 10px;
   }
 
+  .background_team{
+    height: calc(100vh - 3em);
+  }
   .contact_form {
     grid-area: inputs;
     display: grid;
@@ -476,6 +481,15 @@ main {
 
   .teamline{
     max-width: 100vw;
+  }
+
+  
+  .boxteam{
+    margin: 5px;
+  }
+
+  .boxteam h1{
+    font-size: 15px;
   }
 
 }
