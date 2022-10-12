@@ -1,0 +1,124 @@
+.contact_grid {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo titulo titulo"
+      "social form form form"
+      "map map map info";
+    grid-template-rows: auto 40vh 30vh;
+    grid-row-gap: 30px;
+    width: 80%;
+    border: 2px solid;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .contact_form {
+    grid-area: form;
+    margin-right: 2em;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+    textarea {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        width: 100%;
+        height: 40%;
+        resize: none;
+        display: flex;
+        justify-content: center;
+        font-size: 100%;
+      }
+    button {
+        background-color: green;
+        padding: 10px;
+        color: white;
+        border-radius: 10%;
+        font-size: 15px;
+        i {
+            margin-right: 5px;
+          }
+      }
+  }
+  
+  .textarea_contact {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .inputs_contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.7em;
+    justify-content: center;
+    input {
+    width: 100%;
+    text-align: justify;
+    font-size: 100%;
+     }
+  }
+  
+  
+  .send_contact {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .social_network {
+    grid-area: social;
+    padding: 20px;
+    width: 80%;
+    flex-direction: column;
+    height: 80%;
+    margin-top: 2em;
+    margin-left: 2em;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    align-items: center;
+    h3 {
+        margin-top: 10px;
+      }
+  }
+  
+  .contact_info {
+    grid-area: info;
+    padding: 20px;
+    width: 80%;
+    flex-direction: column;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    align-items: center;
+    h2 {
+        margin-bottom: 10px;
+      }
+      h3 {
+        margin-top: 10px;
+      }
+  }
+  
+  .map_format {
+    grid-area: map;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact_phone {
+    display: none;
+  }
+  
+  .title_contact {
+    grid-area: titulo;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: -50px;
+  }

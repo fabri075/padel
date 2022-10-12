@@ -1,0 +1,22 @@
+.imgmenu {
+    width: 30%;
+    margin-left: 0;
+  }
+  
+  .imginicio {
+    box-shadow: $box_img;
+    img {
+      filter: $opacity;
+      width: 100%;
+      height: 500px;
+      }
+  }
+
+  .texto_inicio {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    h2 {
+        margin: 20px;
+      }
+  }

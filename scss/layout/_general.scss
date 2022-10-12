@@ -1,0 +1,56 @@
+    html {
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  section {
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 3em);
+    margin-bottom: 3em;
+  }
+  
+  .titulos {
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    background-color: $green;
+    padding: 20px;
+  }
+
+  footer {
+    background-color: $green;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: 3em;
+  }
+  
+.fa{
+    margin-right: 5px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    label{
+        cursor: pointer;
+    }
+    &:hover {
+        color: $orange;
+      }
+  }
+
+  .selected_page {
+    color: $orange;
+  }
