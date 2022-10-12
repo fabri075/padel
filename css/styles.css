@@ -1,15 +1,12 @@
-/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: Arial, Helvetica, sans-serif; }
 
 html {
   min-height: 100vh;
-  position: relative;
-}
+  position: relative; }
 
 header {
   z-index: 1000;
@@ -18,74 +15,48 @@ header {
   position: sticky;
   padding: 5px;
   align-items: center;
-  top: 0;
-}
+  top: 0; }
+  header a {
+    display: flex;
+    left: 0; }
+  header ul {
+    color: white;
+    display: flex;
+    margin: 10px;
+    justify-content: end; }
+    header ul li {
+      margin-right: 30px;
+      list-style-type: none;
+      font-weight: bold; }
 
-header ul {
-  color: white;
-  display: flex;
-  margin: 10px;
-  justify-content: end;
-}
-nav {
-  display: flex;
-  width: 100%;
-}
-nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-header ul li {
-  margin-right: 30px;
-  list-style-type: none;
-  font-weight: bold;
-}
+.fa {
+  margin-right: 5px; }
 
-header a {
-  display: flex;
-  left: 0;
-}
-
-.fa{
-    margin-right: 5px;
-}
 .imgmenu {
   width: 30%;
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 .imginicio {
-  box-shadow: inset 10px 10px 2px black;
-}
+  box-shadow: inset 10px 10px 2px black; }
+  .imginicio img {
+    filter: opacity(0.5);
+    width: 100%;
+    height: 500px; }
 
-.imginicio img {
-  filter: opacity(0.5);
-  width: 100%;
-  height: 500px;
-}
 a {
   cursor: pointer;
   text-decoration: none;
-  color: white;
-}
-
-a label{
-    cursor: pointer;
-}
-
-a:hover {
-  color: orange;
-}
+  color: white; }
+  a label {
+    cursor: pointer; }
+  a :hover {
+    color: orange; }
 
 .selected_page {
-  color: orange;
-}
+  color: orange; }
 
 section {
-  width: 100%;
-}
+  width: 100%; }
 
 .titulos {
   font-family: sans-serif;
@@ -93,403 +64,11 @@ section {
   width: 100%;
   text-align: center;
   background-color: #71a851;
-  padding: 20px;
-}
+  padding: 20px; }
 
 .texto_inicio {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
-}
-
-.texto_inicio h2 {
-  margin: 20px;
-}
-
-footer {
-  background-color: #71a851;
-  width: 100%;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  height: 3em;
-}
-
-/* Pantalla equipo  */
-.background_team {
-  background-image: url("../assets/images/cancha.jpg");
-  background-size: cover;
-  /* margin-bottom: 20px; */
-}
-.equipobox {
-  margin-bottom: 3em;
-  padding-top: 2em;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.teamline {
-  background-color: #3c3c3ced;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  display: flex;
-  max-width: 80vw;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.boxteam {
-  margin: 20px;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-  overflow: hidden;
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  color: white;
-  flex-direction: column;
-  align-items: center;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: calc(100% - 3em);
-  margin-bottom: 3em;
-}
-
-/* main section{
-
-} */
-
-.boxteam img {
-  height: max-content;
-  width: -webkit-fill-available;
-}
-.boxiconos {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-}
-
-.boxteam h1 {
-  margin-top: 20px;
-  text-align: center;
-}
-.boxiconos i {
-  font-size: 25px;
-  margin-right: 15px;
-  display: flex;
-  align-items: center;
-}
-
-/* Pantala contactos */
-.contact_grid {
-  display: grid;
-  grid-template-areas:
-    "titulo titulo titulo titulo"
-    "social form form form"
-    "map map map info";
-  grid-template-rows: auto 40vh 30vh;
-  grid-row-gap: 30px;
-  width: 80%;
-  border: 2px solid;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
-.contact_form {
-  grid-area: form;
-  margin-right: 2em;
-  margin-top: 2em;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact_form textarea {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  width: 100%;
-  height: 40%;
-  resize: none;
-  display: flex;
-  justify-content: center;
-  font-size: 100%;
-}
-
-.textarea_contact {
-  justify-content: center;
-  display: flex;
-}
-
-.inputs_contact {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0.5em;
-  grid-row-gap: 0.7em;
-  justify-content: center;
-}
-
-.inputs_contact input {
-  width: 100%;
-  text-align: justify;
-  font-size: 100%;
-}
-
-.send_contact {
-  width: 100%;
-  justify-content: center;
-  display: flex;
-}
-
-.contact_form button {
-  background-color: green;
-  padding: 10px;
-  color: white;
-  border-radius: 10%;
-  font-size: 15px;
-}
-
-.contact_form button i {
-  margin-right: 5px;
-}
-
-.social_network {
-  grid-area: social;
-  padding: 20px;
-  width: 80%;
-  flex-direction: column;
-  height: 80%;
-  margin-top: 2em;
-  margin-left: 2em;
-  display: flex;
-  justify-content: center;
-  background-color: grey;
-  color: white;
-  text-align: center;
-  align-items: center;
-}
-
-.contact_info {
-  grid-area: info;
-  padding: 20px;
-  width: 80%;
-  flex-direction: column;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  background-color: grey;
-  color: white;
-  text-align: center;
-  align-items: center;
-}
-
-.map_format {
-  grid-area: map;
-  display: flex;
-  justify-content: center;
-}
-
-.social_network h3 {
-  margin-top: 10px;
-}
-
-.contact_info h2 {
-  margin-bottom: 10px;
-}
-
-.contact_info h3 {
-  margin-top: 10px;
-}
-
-.contact_phone {
-  display: none;
-}
-
-.title_contact {
-  grid-area: titulo;
-  display: flex;
-  margin-top: 10px;
-  justify-content: center;
-  margin-bottom: -50px;
-}
-
-/* Pantalla FAQ */
-.answer {
-  display: none;
-  padding: 20px;
-  background-color: transparent;
-}
-
-.questions {
-  padding: 20px;
-  border: solid 3px;
-}
-.questionanswer {
-  margin: 2em;
-  width: 95%;
-  justify-content: center;
-  background-color: grey;
-}
-
-.questionanswer:hover .answer {
-  display: block;
-  border: solid 3px;
-  background-color: white !important;
-  border-top: none;
-}
-
-.questionanswer:hover .questions {
-  border-bottom: none;
-}
-
-.section_info {
-  display: flex;
-  justify-content: center;
-}
-
-.text_info {
-  padding: 5%;
-  text-align: center;
-}
-
-@media screen and (max-width: 780px) {
-  .contact_grid {
-    display: grid;
-    grid-auto-columns: minmax(0, 1fr);
-    grid-template-areas:
-    "titulo titulo titulo"
-      "social form form"
-      "map map info";
-    grid-template-rows: auto 40vh 30vh;
-    width: 80%;
-    border: 2px solid;
-    margin: 0 auto;
-    margin-top: 10px;
-  }
-  
-  .boxteam{
-    width: 30%;
-    margin: 10px;
-  }
-
-  .boxteam h1{
-    font-size: 20px;
-  }
-
-  .teamline{
-    max-width: 100vw;
-  }
-
-  a label{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .contact_grid {
-    display: grid;
-    grid-auto-columns: minmax(0, 1fr);
-    grid-template-areas:
-      "titulo"
-      "inputs"
-      "ubication";
-    grid-template-rows: auto 40vh 30vh;
-    width: 98%;
-    border: 2px solid;
-    margin: 0 auto;
-    margin-top: 10px;
-  }
-
-  .background_team{
-    height: calc(100vh - 3em);
-  }
-  .contact_form {
-    grid-area: inputs;
-    display: grid;
-    grid-template-areas:
-      "input area"
-      "send send";
-
-    grid-column-gap: 0.5em;
-    grid-row-gap: 0.7em;
-    margin: 0em;
-  }
-
-  .map_format {
-    display: none;
-    justify-content: center;
-  }
-
-  .social_network {
-    display: none;
-  }
-
-  .contact_info {
-    display: none;
-  }
-
-  .inputs_contact {
-    grid-area: input;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-  }
-
-  .inputs_contact input {
-    width: 100%;
-    height: 2em;
-    text-align: justify;
-    font-size: 100%;
-  }
-
-  .textarea_contact {
-    grid-area: area;
-    width: 100%;
-    margin: 0%;
-  }
-
-  .send_contact {
-    grid-area: send;
-    justify-content: center;
-  }
-
-  .contact_phone {
-    background-color: grey;
-    display: flex;
-    width: 100%;
-    color: white;
-  }
-  .contact_phone div {
-    width: 50%;
-  }
-  .contact_phone div h2 {
-    margin-left: 2em;
-    margin-top: 1.5em;
-  }
-
-  .boxteam{
-    width: 30%;
-  }
-
-  .teamline{
-    max-width: 100vw;
-  }
-
-  
-  .boxteam{
-    margin: 5px;
-  }
-
-  .boxteam h1{
-    font-size: 15px;
-  }
-
-}
+  margin-top: 50px; }
+  .texto_inicio h2 {
+    margin: 20px; }
