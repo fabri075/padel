@@ -5,14 +5,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@mixin box{
+@mixin box($fondo1, $fondo2){
     box-shadow: 
     inset 0 0 60px whitesmoke,
-    inset 20px 0 80px $faqgreen,
-    inset -20px 0 80px #0ff,
-    inset 20px 0 300px $faqgreen,
-    inset -20px 0 300px #0ff,
+    inset 20px 0 80px $fondo1,
+    inset -20px 0 80px $fondo2,
+    inset 20px 0 300px $fondo1,
+    inset -20px 0 300px $fondo2,
     0 0 50px #fff,
-    -10px 0 80px $faqgreen,
-    10px 0 80px #0ff;
+    -10px 0 80px $fondo1,
+    10px 0 80px $fondo2;
 }

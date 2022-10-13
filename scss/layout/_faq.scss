@@ -51,7 +51,7 @@
         .face{
           &.face1{
             transform: translateY(0);
-            @include box;
+            @include box($green, $lightblue);
             .content{
               opacity: 1;
             }
