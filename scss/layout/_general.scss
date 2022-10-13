@@ -48,3 +48,7 @@ a {
   .selected_page {
     color: $orange;
   }
+
+  .container-fluid{
+    flex-wrap: nowrap !important;
+  }
