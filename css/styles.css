@@ -196,7 +196,7 @@ a {
 
 .contact_grid {
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo" "social form form form" "map map map info";
+  grid-template-areas: "titulo titulo titulo titulo" "social form form form" "map map map info";
   grid-template-rows: auto 40vh 30vh;
   grid-row-gap: 30px;
   width: 80%;
@@ -302,7 +302,7 @@ a {
   .contact_grid {
     display: grid;
     grid-auto-columns: minmax(0, 1fr);
-    grid-template-areas: "titulo" "inputs" "ubication";
+    grid-template-areas: "titulo" "inputs" "ubication";
     grid-template-rows: auto 40vh 30vh;
     width: 98%;
     border: 2px solid;
@@ -313,7 +313,7 @@ a {
   .contact_form {
     grid-area: inputs;
     display: grid;
-    grid-template-areas: "input area" "send send";
+    grid-template-areas: "input area" "send send";
     grid-column-gap: 0.5em;
     grid-row-gap: 0.7em;
     margin: 0em; }
@@ -363,7 +363,7 @@ a {
   .contact_grid {
     display: grid;
     grid-auto-columns: minmax(0, 1fr);
-    grid-template-areas: "titulo titulo titulo" "social form form" "map map info";
+    grid-template-areas: "titulo titulo titulo" "social form form" "map map info";
     grid-template-rows: auto 40vh 30vh;
     width: 80%;
     border: 2px solid;
@@ -375,7 +375,9 @@ a {
     .boxteam h1 {
       font-size: 20px; }
   .teamline {
-    max-width: 100vw; } }
+    max-width: 100vw; }
+  .container {
+    justify-content: center; } }
 
 @media screen and (max-width: 991px) {
   nav ul li {
