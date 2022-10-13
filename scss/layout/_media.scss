@@ -120,7 +120,17 @@
       max-width: 100vw;
     }
   
-    a label{
-      display: none;
+    // a label{
+    //   display: none;
+    // }
+  }
+
+  @media screen and (max-width: 991px) {
+    nav {
+      ul {
+          li{
+             margin-bottom: 10px;
+            }
+        }
     }
   }
