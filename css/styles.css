@@ -298,6 +298,30 @@ a {
   justify-content: center;
   margin-bottom: -50px; }
 
+@media screen and (max-width: 780px) {
+  .contact_grid {
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-template-areas: "titulo titulo titulo" "social form form" "map map info";
+    grid-template-rows: auto 40vh 30vh;
+    width: 80%;
+    border: 2px solid;
+    margin: 0 auto;
+    margin-top: 10px; }
+  .boxteam {
+    width: 30%;
+    margin: 10px; }
+    .boxteam h1 {
+      font-size: 20px; }
+  .teamline {
+    max-width: 100vw; }
+  .container {
+    justify-content: center; } }
+
+@media screen and (max-width: 991px) {
+  nav ul li {
+    margin-bottom: 10px; } }
+
 @media screen and (max-width: 580px) {
   .contact_grid {
     display: grid;
@@ -358,27 +382,3 @@ a {
       font-size: 15px; }
   .teamline {
     max-width: 100vw; } }
-
-@media screen and (max-width: 780px) {
-  .contact_grid {
-    display: grid;
-    grid-auto-columns: minmax(0, 1fr);
-    grid-template-areas: "titulo titulo titulo" "social form form" "map map info";
-    grid-template-rows: auto 40vh 30vh;
-    width: 80%;
-    border: 2px solid;
-    margin: 0 auto;
-    margin-top: 10px; }
-  .boxteam {
-    width: 30%;
-    margin: 10px; }
-    .boxteam h1 {
-      font-size: 20px; }
-  .teamline {
-    max-width: 100vw; }
-  .container {
-    justify-content: center; } }
-
-@media screen and (max-width: 991px) {
-  nav ul li {
-    margin-bottom: 10px; } }
