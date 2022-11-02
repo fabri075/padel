@@ -60,9 +60,6 @@ a {
 .selected_page {
   color: #fcba03; }
 
-.container-fluid {
-  flex-wrap: nowrap !important; }
-
 .imgmenu {
   width: 30%;
   margin-left: 0; }
