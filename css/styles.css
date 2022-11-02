@@ -197,7 +197,7 @@ a {
 .contact_grid {
   display: grid;
   grid-template-areas: "titulo titulo titulo titulo" "social form form form" "map map map info";
-  grid-template-rows: auto 40vh 30vh;
+  grid-template-rows: auto 50vh 30vh;
   grid-row-gap: 30px;
   width: 80%;
   border: 2px solid;
@@ -303,7 +303,7 @@ a {
     display: grid;
     grid-auto-columns: minmax(0, 1fr);
     grid-template-areas: "titulo titulo titulo" "social form form" "map map info";
-    grid-template-rows: auto 40vh 30vh;
+    grid-template-rows: auto 50vh 30vh;
     width: 80%;
     border: 2px solid;
     margin: 0 auto;
