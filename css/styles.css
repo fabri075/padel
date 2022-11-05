@@ -47,7 +47,10 @@ footer {
   footer h6 {
     text-align: center; }
 
-.adjust-footer {
+.footer_inicio {
+  position: absolute; }
+
+.footer_info {
   position: absolute; }
 
 .fa {
@@ -300,6 +303,10 @@ a {
   justify-content: center;
   margin-bottom: -50px; }
 
+@media screen and (max-width: 1355px) {
+  .footer_inicio {
+    position: inherit; } }
+
 @media screen and (max-width: 780px) {
   .contact_grid {
     display: grid;
@@ -383,4 +390,8 @@ a {
     .boxteam h1 {
       font-size: 15px; }
   .teamline {
-    max-width: 100vw; } }
+    max-width: 100vw; }
+  .section_info {
+    flex-wrap: wrap; }
+  .footer_info {
+    position: inherit; } }
