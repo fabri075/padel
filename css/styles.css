@@ -5,12 +5,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif; }
 
-header {
-  height: 4em; }
-
 nav {
-  position: fixed !important;
-  top: 0;
   display: flex;
   width: 100%; }
   nav ul {
