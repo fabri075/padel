@@ -6,6 +6,11 @@
   .text_info {
     padding: 5%;
     text-align: center;
+    a{
+      text-decoration: underline;
+      color: black;
+      font-weight: bold;
+    }
   }
 
   .imageplayer{

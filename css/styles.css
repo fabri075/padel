@@ -92,6 +92,10 @@ a {
 .text_info {
   padding: 5%;
   text-align: center; }
+  .text_info a {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold; }
 
 .imageplayer {
   max-width: 100%;
@@ -305,7 +309,9 @@ a {
 
 @media screen and (max-width: 1355px) {
   .footer_inicio {
-    position: inherit; } }
+    position: inherit; }
+  .contact_info h3 {
+    font-size: 20px; } }
 
 @media screen and (max-width: 780px) {
   .contact_grid {
@@ -382,7 +388,7 @@ a {
     .contact_phone div {
       width: 50%; }
       .contact_phone div h2 {
-        margin-left: 2em;
+        margin-left: 1em;
         margin-top: 1.5em; }
   .boxteam {
     width: 30%;
