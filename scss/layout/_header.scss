@@ -22,8 +22,12 @@
 //         }
 //     }
 //   }
-
+header{
+  height: 4em;
+}
   nav {
+    position: fixed !important;
+    top: 0;
     display: flex;
     width: 100%;
     ul {
