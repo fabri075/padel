@@ -25,18 +25,21 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%; }
+  width: 100%;
+  background-image: linear-gradient(180deg, #fdfdf4 0, #eaf3d1 16.67%, #ddffc9 33.33%, #c9ffc6 50%, #b8f1c2 66.67%, #a9e4bf 83.33%, #71a851 100%);
+  min-height: calc(100vh - 7em); }
 
 .titulos {
   font-family: sans-serif;
   font-size: 25px;
   width: 100%;
   text-align: center;
-  background-color: #71a851;
+  background-color: #4e753a;
   padding: 20px; }
 
 footer {
-  background-color: #71a851;
+  background-color: #4e753a;
+  color: white;
   width: 100%;
   bottom: 0;
   height: 3em;
@@ -159,7 +162,8 @@ a {
   flex-wrap: wrap; }
   .container .card {
     border: none;
-    position: relative; }
+    position: relative;
+    --bs-card-bg: #fff0; }
     .container .card .face {
       width: 300px;
       height: 200px;
@@ -197,7 +201,7 @@ a {
         transform: translateY(-100px); }
     .container .card:hover .face.face1 {
       transform: translateY(0);
-      box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #71a851, inset -20px 0 80px #0ff, inset 20px 0 300px #71a851, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #71a851, 10px 0 80px #0ff; }
+      box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #4e753a, inset -20px 0 80px #0ff, inset 20px 0 300px #4e753a, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #4e753a, 10px 0 80px #0ff; }
       .container .card:hover .face.face1 .content {
         opacity: 1; }
     .container .card:hover .face.face2 {
@@ -205,13 +209,13 @@ a {
 
 .contact_grid {
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo" "social form form form" "map map map info";
+  grid-template-areas: "titulo titulo titulo titulo" "social form form form" "map map map info";
   grid-template-rows: auto 50vh 30vh;
   grid-row-gap: 30px;
   width: 80%;
-  border: 2px solid;
   margin: 0 auto;
-  margin-top: 10px; }
+  margin-top: 10px;
+  box-shadow: 0px 0px 7px 2px #000000a3; }
 
 .contact_form {
   grid-area: form;
@@ -317,7 +321,7 @@ a {
   .contact_grid {
     display: grid;
     grid-auto-columns: minmax(0, 1fr);
-    grid-template-areas: "titulo titulo titulo" "social form form" "map map info";
+    grid-template-areas: "titulo titulo titulo" "social form form" "map map info";
     grid-template-rows: auto 50vh 30vh;
     width: 80%;
     border: 2px solid;
@@ -341,7 +345,7 @@ a {
   .contact_grid {
     display: grid;
     grid-auto-columns: minmax(0, 1fr);
-    grid-template-areas: "titulo" "inputs" "ubication";
+    grid-template-areas: "titulo" "inputs" "ubication";
     grid-template-rows: auto 40vh 30vh;
     width: 98%;
     border: 2px solid;
@@ -352,7 +356,7 @@ a {
   .contact_form {
     grid-area: inputs;
     display: grid;
-    grid-template-areas: "input area" "send send";
+    grid-template-areas: "input area" "send send";
     grid-column-gap: 0.5em;
     grid-row-gap: 0.7em;
     margin: 0em; }
